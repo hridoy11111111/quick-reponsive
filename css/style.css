@@ -1,0 +1,513 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+p{
+    font-size: 18px;
+    color: #3b506c;
+}
+header {
+    padding: 15px 0px 10px;
+    background-color: white;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 13px 14px -10px;
+    position: fixed;
+    width: 100%;
+}
+.container{
+    width: 1200px;
+    margin: auto;
+}
+.logo {
+    width: 600px;
+    float:left;
+}
+.logo img {}
+
+nav{
+  width: 50%;
+float: left;
+
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+}
+nav ul li{
+    display: inline;
+    padding: 0px 15px 14px;
+}
+nav ul li a{
+    text-decoration: none;
+    
+    color: #3b506c;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+h1{
+    color: #3b506c;
+}
+
+/* banner  */
+.banner{
+    text-align: center;
+    font-size: 18px;
+    margin: 150px 0 50px 0;
+    
+}
+
+.banner h1{
+    font-size: 50px;
+}
+.banner h1 span{
+    color: #0c66ff;
+}
+.banner  p {
+    text-align: center;
+
+
+}
+
+.banner img{
+    width: 50%;
+    
+}
+/* completed project */
+.projects{
+    width: 50%;
+    float: left;
+}
+.project-left{
+    text-align: right;
+    padding: 0 20px 0 0;
+}
+.project-left h2{
+    font-size: 40px;
+    color: red;
+}
+.project-left p{}
+
+.project-right{
+    padding: 0 0 0 20px;
+}
+.project-right h2{font-size: 40px;color: #3b506c;}
+
+/* blog section */
+.blog-parent{
+    display: flex;
+    margin: 70px auto;
+    padding: 20px 0;
+
+}
+.blog{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    margin: 0 10px 0 10px;
+    padding: 20px;
+    border-radius: 8px;
+}
+.blog-item{
+}
+.blog-item img{
+    width: 100%;
+    width: 220px;
+}
+.blog-item h3{
+
+}
+.blog-item p{
+    color: rgb(60 80 107);   
+}
+section{
+    overflow: hidden;
+}
+.blog:hover{  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    color: red;
+    background-color: rgba(99, 134, 148, 0.342);
+    
+    
+}
+.colour{
+    background-color: rgba(155, 86, 129,  0.384);
+}
+.colour2{
+    background-color:rgba(93, 151, 93, 0.384);
+
+}
+.colour3{
+    background-color: rgba(168, 168, 110, 0.384);
+}
+/* footer */
+footer{
+    background-color: rgba(128, 128, 128, 0.322);
+    padding: 50px  0;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+.col{
+    color: rgb(60 80 107);
+    font-size: 20px;
+    list-style: none;
+    margin: 12px 0;
+}
+.col h4{
+
+}
+.col li{
+
+}
+#myBtn{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgb(0, 255, 136);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 100px;
+    line-height: 30px;
+}
+#myBtn:hover{
+    border-color: #555;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width:600px) {
+    
+
+    .container{
+        width: 90%;
+    }
+    .logo{
+        width: 100%;
+        text-align: center;
+    }
+    
+    nav{
+      width: 100%;
+    }
+    nav ul{
+        
+        text-align: center;
+    }
+    nav ul li{
+    
+        padding: 0px 7px 0px;
+    }
+    
+    
+    .banner h1{
+        font-size: 25px;
+    }
+    .banner h1 span{
+        color: #0c66ff;
+    }
+    
+    .banner img{
+        width: 80%;
+        margin: 30px 0 0 0px;
+    }
+    .projects{
+        width: 100%;
+        
+    }
+    .project-left{
+        
+        padding: 0 0px 0 0;
+    }
+    .project-left p{
+        padding: 0 20px;
+    }
+    .project-left h2{
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    .project-right h2{
+            font-size: 25px;
+        text-align: center;
+        }
+        .blog-parent{
+            display: block;
+            margin: 40px auto;
+            padding: 20px 0;
+        
+        }
+        .blog{
+           
+            margin: 20px 0px 0 0px;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .blog-item p{
+            text-align: justify;
+        }
+        .blog-item img{
+            width: 100%;
+            width: 220px;
+        }
+        
+        footer{
+            
+            padding: 25px  0;
+        }
+        .row{
+            display: block;
+            
+        }
+    }      
+
+        
+
+/* Medium devices (landscape tablets, 768px) */
+@media only screen and (min-width:601px) and (max-width:768px) {
+ 
+        
+    
+    .container{
+        width: 95%; 
+    }
+    .logo{
+        width: 100%;
+        text-align: center;
+    }
+    
+    nav{
+      width: 100%;
+    }
+    nav ul{
+        
+        text-align: center;
+    }
+    nav ul li{
+    
+        padding: 0px 7px 0px;
+    }
+    
+    
+    .banner h1{
+        font-size: 35px;
+    }
+    .banner h1 span{
+        color: #0c66ff;
+    }
+    
+    .banner img{
+        width: 70%;
+        margin: 30px 0 0 0px;
+    }
+    .projects{
+        width: 50%;
+        
+    }
+    .project-left{
+        text-align: right;
+        padding: 0 0px 0 0;
+    }
+    .project-left p{
+        padding: 0 20px;
+    }
+    .project-left h2{
+        font-size: 35px;
+       
+    }
+    
+    .project-right h2{
+            font-size: 35px;
+        text-align: left;
+        }
+        .blog-parent{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+            margin: 40px auto;
+            padding: 0px 0;
+        
+        }
+        .blog{
+           
+            margin: 0px 0px 0 0px;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        
+        
+        footer{
+            
+            padding: 25px  0;
+            text-align: center;
+        }
+        .row{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            
+        }
+    }         
+
+
+
+
+
+
+    /* Large devices (laptops/ small desktops, 992px) */
+@media only screen and (min-width:769px) and (max-width:992px) {
+    
+    .container{
+        width: 90%;
+    }
+    
+    .banner h1{
+        font-size: 45px;
+    }
+    .banner h1 span{
+        color: #0c66ff;
+    }
+    
+    .banner img{
+        width: 80%;
+        margin: 30px 0 0 0px;
+    }
+    .projects{
+        width: 50%;
+        
+    }
+    .project-left{
+        text-align: right;
+        padding: 0 0px 0 0;
+    }
+    .project-left p{
+        padding: 0 20px;
+    }
+    .project-left h2{
+        font-size: 40px;
+        text-align: right;
+    }
+    
+    .project-right h2{
+            font-size: 45px;
+        text-align: left;
+        }
+        .blog-parent{
+            display: flex;
+            
+            grid-gap: 20px;
+            margin: 40px auto;
+            padding: 20px 0;
+        
+        }
+        .blog{
+           
+            margin: 20px 0px 0 0px;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        
+        
+        footer{
+            
+            padding: 25px  0;
+            text-align: center;
+        }
+        .row{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            
+        } 
+        nav {
+            width: 70%;
+            float: left;
+        }
+        .logo{
+            width: 30%;
+        }
+        header{
+            width: 100%;
+        }
+}
+/* Large devices ( large laptops/ large desktops, 1024px) */
+@media only screen and (min-width: 993px) and (max-width:1024px) {
+    .container{
+        width: 100%;
+    }
+    
+    .banner h1{
+        font-size: 45px;
+    }
+    .banner h1 span{
+        color: #0c66ff;
+    }
+    
+    .banner img{
+        width: 80%;
+        margin: 30px 0 0 0px;
+    }
+    .projects{
+        width: 50%;
+        
+    }
+    .project-left{
+        text-align: right;
+        padding: 0 0px 0 0;
+    }
+    .project-left p{
+        padding: 0 20px;
+    }
+    .project-left h2{
+        font-size: 40px;
+        text-align: right;
+    }
+    
+    .project-right h2{
+            font-size: 45px;
+        text-align: left;
+        }
+        .blog-parent{
+            display: flex;
+            
+            grid-gap: 20px;
+            margin: 40px auto;
+            padding: 20px 0;
+        
+        }
+        .blog{
+           
+            margin: 20px 0px 0 0px;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        
+        
+        footer{
+            
+            padding: 25px  0;
+            text-align: center;
+        }
+        .row{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            
+        } 
+        nav {
+            width: 70%;
+            float: left;
+        }
+        .logo{
+            width: 90%;
+        }
+        header{
+            width: 100%;
+           
+        }
+}
